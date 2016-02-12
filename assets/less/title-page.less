@@ -1,0 +1,313 @@
+.boxed-items {
+	margin-top: 20px;
+	list-style: none;
+	padding: 0;
+
+	> li {
+		background: #fff;
+		margin-bottom: 20px;
+		padding: 15px 25px;
+
+		> h3 {
+			margin: 0;
+		}
+
+		.rating {
+			margin: 4px 0 10px 0;
+		}
+	}
+}
+
+#title-page {
+	color: darken(@gray-lighter, 45%);
+
+	#star-rating {
+		margin-bottom: 20px;
+	}
+
+	#disqus_thread {
+		margin-top: 25px;
+	}
+
+	#filter-bar {
+		background: #fff;
+		padding: 15px;
+		margin-top: 20px;
+	}
+
+	.pretty-figure {
+		.img-responsive, figcaption {
+			box-shadow: none;
+			border-radius: 0;
+		}
+	}
+
+	.episode-list {
+		.heading {
+			text-align: center;
+		}
+		
+		#details-container .col-lg-10 {
+			padding: 44px 20px !important;
+		}
+	}
+
+	.heading {
+		margin: 35px 0;
+	}
+
+	.nav-tabs {
+		margin-top: 25px;
+
+		> .active > a {
+			color: darken(@gray-lighter, 45%);
+		}
+	}
+
+	#episode-list {
+
+		.media {
+			margin-bottom: 30px;
+			background: #fff;
+
+			.center {
+				margin-left: -31px;
+			}
+
+			@media (max-width: @screen-sm) { 
+				.media-body {
+					padding: 10px;
+				}
+
+				h4 {
+					margin-top: 0;
+				}
+
+				.img-responsive {
+					width: 100%;
+				}
+			}
+
+		}
+
+		h4 {
+			margin-top: 40px;
+		}
+
+		strong {
+			display: block;
+			padding: 5px 0;
+		}
+
+		a {
+			padding-left: 0;
+			margin-right: 15px;
+		}
+	}
+
+	> .container {
+		margin-top: @navbar-height;
+		padding: 30px;
+		background: #F2F2F3;
+
+		#social {
+			position: absolute;
+			top: 5px;
+			left: 5px;
+
+			.facebook {
+				background: #3B5999;
+				color: #fff;
+				padding: 6px 16px;
+			}
+
+			.google {
+				background: #D44332;
+				color: #fff;
+			}
+
+			.twitter {
+				background: #00ACED;
+				color: #fff;
+			}
+		}
+
+		#lists {
+			position: absolute;
+			top: 5px;
+			right: 5px;
+
+			.btn {
+				font-size: 13px;
+
+				.fa {
+					padding-right: 2px;
+				}
+			}
+		}
+
+		@media (max-width: 412px) { 
+			#lists {
+				top: -60px;
+				right: 0;
+				width: 100%;
+				margin-top: 40px;
+
+				.btn {
+					width: 100%;
+					margin-bottom: 3px;
+				}
+			}
+
+			#social {
+				top: 95px;
+			}
+
+			#trailer-mask {
+				margin-top: 90px;
+			}
+		}
+
+		#details-container {
+			margin-top: 25px;
+
+			.col-md-2 {
+				padding-left: 0;
+			}
+
+			#details {
+				background: #fff;
+				padding: 20px;
+
+				.list-inline {
+					display: inline-block;
+				}
+
+				strong, h3, h4 {
+					margin: 0;
+					color: darken(@gray-lighter, 50%) !important;
+				}
+
+				#people > .list-inline {
+					margin-bottom: 5px;
+				}
+			}
+
+			#ratings {
+				margin: 20px 0;
+			}
+
+			#sub-details {
+				border-left: 1px solid #F2F2F3;
+
+				.list-unstyled {
+					.fa {
+						padding-right: 5px;
+					}
+
+					.fa-language, .fa-dollar {
+						padding-right: 10px;
+					}
+				}
+
+				strong {
+					padding-right: 3px;
+				}
+
+				.raty {
+					vertical-align: middle;
+				}
+
+				.raty-text {
+					vertical-align: middle;
+					font-size: 13px;
+					font-weight: bold;
+					padding-left: 5px;
+				}
+			}
+
+		}
+		
+
+		> #images-col {
+			> .img-responsive {
+				margin: 0 20px 10px 20px;
+				border-radius: 3px;
+
+				&:hover {
+					cursor: -webkit-zoom-in;
+				}
+			}
+
+			@media (max-width: @screen-sm) { 
+				padding: 0;
+				
+				.img-responsive {
+					width: 100%;
+					margin: 0 0 10px 0;
+					padding: 0;
+				}
+			}
+		}
+
+		#trailer {
+			display: none;
+		}
+
+		#trailer-mask {
+			position: relative;
+
+			&:hover {
+				cursor: pointer;
+			}
+
+			> img {
+				width: 100%;
+				border-radius: 3px;
+			}
+		}
+
+		#cast {
+			margin-top: 30px;
+
+			.char-name {
+				border-top: 1px solid lighten(@gray-lighter, 3%);
+				padding-top: 1px;
+				margin-top: 1px;
+				font-weight: normal;
+				font-size: 12.5px;
+			}
+
+			figure {
+				padding-left: 0;
+			}
+
+			.img-responsive {
+				width: 100%;
+				height: auto;
+			}
+
+			@media (min-width: @screen-sm) and (max-width: @screen-md) { 
+				.img-responsive {
+					height: 366px;
+				}
+
+				figcaption {
+					min-height: 56px;
+				}
+			}
+
+			@media (min-width: @screen-md) { 
+				.img-responsive {
+					height: 278px;
+				}
+			}
+
+			@media (min-width: @screen-lg) { 
+				.img-responsive {
+					height: 349px;
+				}
+			}	
+		}
+	}
+}

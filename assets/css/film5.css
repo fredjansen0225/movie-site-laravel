@@ -1,0 +1,228 @@
+.no-gutter [class*="-3"] {
+    padding-left:0;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #FFF;
+  color:#FFF;
+
+}
+.btn-outline:hover {
+  background: #FFF;
+  color:#000;
+}
+
+.film5-title {
+  margin-top: 80px;
+}
+
+.film5-title .marquee {
+  background-position: 50% 25%;
+  background-size: cover;
+}
+
+.film5-title .marquee .inner {
+  background: rgba(0,0,0,.75);
+}
+
+.film5-title .title-details {
+  padding:100px 0 90px;
+}
+@media (max-width: 1170px) {
+  .film5-title .title-details {
+    padding:40px 0 30px;
+  }
+}
+@media (max-width: 768px) {
+  .film5-title .title-details {
+    text-align: center;
+  }
+}
+
+.film5-title .marquee .poster {
+  float: left;
+}
+
+.film5-title .marquee .poster-image {
+  height: 355px;
+  width: 259px;
+  display: block;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+@media (max-width: 1170px) {
+  .film5-title .marquee .poster-image {
+    height:222px;
+    width:162px;
+  }
+}
+
+.film5-title .marquee .title-info {
+  color:#CCCCCC;
+}
+.film5-title .marquee .title-info h1 {
+  font-weight: bold;
+}
+.film5-title .marquee .title-info h3 {
+  line-height: 1.5em;
+  font-size: 20px;
+  color:#CCC;
+}
+@media (max-width: 1170px) {
+  .film5-title .marquee .title-info h3 {
+    font-size: 18px;
+  }
+}
+.film5-title .marquee .title-info div.meta {
+  padding-bottom: 20px;
+}
+.film5-title .marquee .title-info div.meta p {
+  display: inline-block;
+  color:#CCC;
+  border-right: 1px solid #999;
+  padding: 0 10px 0 0;
+  margin: 10px 10px 0 0
+}
+@media (max-width: 768px) {
+  .film5-title .marquee .title-info h1 {
+    font-size: 24px;
+  }
+  .film5-title .marquee .title-info div.meta {
+    display: none;
+  }
+}
+.film5-title .marquee .title-info div.meta p:last-child {
+  border-right: none;
+}
+
+.film5-title .tab-wrapper {
+  border-bottom: 1px solid #AAA;
+  background: #DDDDDD;
+
+}
+.film5-title .tab-wrapper ul {
+  width: 100%;
+}
+.film5-title .tab-wrapper ul li {
+  width: 25%;
+  float: left;
+}
+.film5-title .tab-wrapper ul li a {
+  display: block;
+  padding:25px 0 24px 0;
+  line-height: 1em;
+  margin-bottom: -1px;
+  color:#999;
+  font-size: 18px;
+  border-left: 1px solid #AAAAAA;
+  text-align: center;
+}
+.film5-title .tab-wrapper ul li:last-child a {
+  border-right:1px solid #AAAAAA;
+}
+.film5-title .tab-wrapper ul li a:hover {
+  color:#000;
+}
+.film5-title .tab-wrapper ul li.active a {
+  color:#000;
+  font-weight: bold;
+  background: #F2F2F3;
+}
+@media (max-width: 768px) {
+  .film5-title .tab-wrapper ul li a {
+    padding:20px 0 19px 0;
+    font-size: 12px;
+  }
+}
+.film5-title #cast,
+.film5-title #watch,
+.film5-title #reviews,
+.film5-title #comments {
+  padding: 50px 0
+}
+
+.film5-title .play-options {
+  padding: 20px 0 0 0;
+}
+.film5-title .play-options a {
+  display: inline-block;
+  margin-right: 20px;
+}
+.film5-title #watch table tbody tr td {
+  vertical-align: middle;
+  padding-top: 20px;
+  padding-bottom: 18px;
+}
+.film5-title #watch table tr:hover {
+  background: #FFFFCC;
+}
+
+.custom-rating {
+  width:85px;
+  background:url("/assets/images/stars-empty.png");
+  background-position: left top;
+  background-size: auto 14px;
+  background-repeat: no-repeat;
+  margin: 5px auto 0 auto;
+  display: inline-block;
+  clear:both;
+  height: 20px;
+}
+.custom-rating .inner {
+  background-color:transparent !important;
+  background-image:url("/assets/images/stars-full.png") !important;
+  background-position: left top !important;
+  background-repeat: no-repeat !important;
+  background-size: auto 14px !important;
+  height: 20px !important;
+}
+
+ul.link-nav {
+  list-style: none;
+  margin-bottom: 50px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+ul.link-nav > li {
+  margin: 0;
+  padding: 0;
+}
+ul.link-nav > li > a {
+  display: block;
+  background: #50B89F;
+  font-weight: bold;
+  color:#FFF;
+  padding:20px;
+}
+ul.link-nav > li > a:hover {
+  text-decoration: none;
+}
+ul.link-nav > li > div > ul.episodes {
+  display: none;
+  transition: all .25s;
+}
+ul.link-nav > li > div > ul.episodes {
+  display: block;
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+ul.link-nav > li > div > ul.episodes > li {
+  margin:0;
+  padding:0;
+}
+ul.link-nav > li > div > ul.episodes > li > a {
+  background:rgba(0,0,0,0.1);
+  padding:10px;
+  display:block;
+  border-bottom: 1px solid #F2F2F3;
+}
+ul.link-nav > li > div > ul.episodes > li > a:hover,
+ul.link-nav > li > div > ul.episodes > li.active > a {
+  background:rgba(0,0,0,0.15);
+  text-decoration: none;
+}
+

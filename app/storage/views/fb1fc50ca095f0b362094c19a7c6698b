@@ -1,0 +1,43 @@
+
+<?php $__env->startSection('bodytag'); ?>
+  <body id="not-found">
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('nav'); ?>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
+
+  <div class="clearfix">
+    <div class="align">
+      <h1>Oops!</h1>
+      <h2><?php echo trans('dash.404'); ?></h2>
+      <p><?php echo trans('dash.404sub'); ?></p>
+      <a href="<?php echo route('home'); ?>" class="btn btn-primary btn-block"><i class="fa fa-chevron-left"></i> <?php echo trans('dash.takeMeHome'); ?></a>
+    </div>
+  </div>
+
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('ads'); ?>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('footer'); ?>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('scripts'); ?>
+  <script>
+    $.fn.center = function () {
+       this.css("position","absolute");
+       this.css("top", ( ($(window).height() - this.height() ) / 2) - 100 + "px");
+       this.css("left", ( $(window).width() - this.width() ) / 2 + "px");
+       return this;
+    }
+
+    $('.align').center();
+
+  </script>
+<?php $__env->stopSection(); ?>
+
+
+<?php echo $__env->make('Main.Boilerplate', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

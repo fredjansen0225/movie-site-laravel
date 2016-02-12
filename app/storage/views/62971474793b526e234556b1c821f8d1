@@ -1,0 +1,60 @@
+
+<?php $__env->startSection('htmltag'); ?>
+  <html id="login-page">
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('title'); ?>
+  <title><?php echo trans('users.login title'); ?></title>
+<?php $__env->stopSection(); ?>
+
+  <?php $__env->startSection('content'); ?>
+    <div class="container">
+      <div class="col-md-2"></div>
+
+      <div class="col-md-8" id="login-box">
+
+      	<div class="row"> <?php echo $__env->make('Partials.Response', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?> </div>
+
+      	<div class="col-md-5 social-login-btns">
+      		<a class="btn btn-block fb" href="<?php echo url('social/facebook'); ?>"><i class="fa fa-facebook-square"></i> <?php echo trans('main.log with fb'); ?></a>
+      		<a class="btn btn-block tw" href="<?php echo url('social/twitter'); ?>"><i class="fa fa-twitter-square"></i> <?php echo trans('main.log with tw'); ?></a>
+      		<a class="btn btn-block go" href="<?php echo url('social/google'); ?>"><i class="fa fa-google-plus-square"></i> <?php echo trans('main.log with gg'); ?></a>
+      	</div>
+
+        <div class="col-md-7">
+        	<?php echo Form::open(array('action' => 'SessionController@store')); ?>
+
+	          <div class="form-group">
+	            <label for="username"><i class="fa fa-user"></i> <?php echo trans('users.username'); ?></label>
+	            <?php echo Form::text('username', Input::old('username'), array('class' => 'form-control')); ?>
+	            <?php echo $errors->first('username', "<span class='help-block alert alert-danger'>:message</span>"); ?>
+	          </div>
+
+	          <div class="form-group">
+	            <label for="password"><i class="fa fa-lock"></i> <?php echo trans('users.password'); ?></label>
+	            <?php echo Form::password('password', array('class' => 'form-control')); ?>
+	            <?php echo $errors->first('password', "<span class='help-block alert alert-danger'>:message</span>"); ?>
+	          </div>
+	          
+	          <hr>
+
+	          <div class="login-remember-row">
+	            <label for="remember"><?php echo trans('users.remember me'); ?></label>
+	            <?php echo Form::checkbox('remember', 1, true, array('id' => 'remember')); ?>
+
+	            <a href="<?php echo url('forgot-password'); ?>"><?php echo trans('users.forgot your password'); ?></a>
+	            <button type="submit" class="btn btn-primary pull-right"><?php echo trans('users.login'); ?></button>
+	          </div>
+
+	        <?php echo Form::close(); ?>
+        </div>
+    </div>
+
+    <div class="col-md-2"></div>
+
+  </div>
+  <?php $__env->stopSection(); ?>
+
+  <?php $__env->startSection('ads'); ?>
+  <?php $__env->stopSection(); ?>
+<?php echo $__env->make('Main.Boilerplate', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

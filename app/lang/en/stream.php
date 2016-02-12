@@ -1,0 +1,32 @@
+<?php return array(
+
+	 'links'           => 'Links',
+	 'reports'         => 'Reports',
+	 'source'          => 'Source',
+	 'embed'           => 'Embed',
+	 'label'           => 'Label',
+	 'openExternal'    => 'Open in a new window',
+	 'videojs'         => 'Play using custom player',
+	 'attachNew'       => 'Attach New Link',
+	 'attachedSuccess' => 'Attached new link to title successfully!',
+	 'detachSuccess'   => 'Detached link from title successfully!',
+	 'reportLink'      => 'Report this link as broken.',
+	 'reportSuccess'   => 'Thanks for reporting, we\'ll take a look at it as soon as possible.',
+	 'reportFail'      => 'You have already reported this link.',
+	 'seasonNum'       => 'Season Number',
+	 'episodeNum'      => 'Episode Number',
+	 'watchNow'        => 'Watch Now',
+	 'watchPromo'      => 'Watch Promo',
+	 'availToStream'   => 'Available to stream!',
+	 'notAvailToStream' => 'Not yet available to stream.',
+	 'mostPopular'     => 'Most popular',
+	 'onlyAvailToStream' => 'Only show titles that are available to stream.',
+	 'linkDelSuccess'  => 'Deleted link successfully!',
+	 'reportsAsc'      => 'Reports Ascending',
+	 'reportsDesc'     => 'Reports Descending',
+	 'labelAsc'        => 'Label A-Z',
+	 'labelDesc'       => 'Label Z-A',
+	 'moreRepsThen'    => 'More reports then',
+
+
+);

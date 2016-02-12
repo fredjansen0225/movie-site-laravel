@@ -1,0 +1,16 @@
+<?php if(Session::has('success')): ?>
+	<div class="alert alert-success alert-dismissable">
+		<?php echo e(Session::get('success')); ?>
+		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+	</div>
+<?php elseif (Session::has('failure')): ?>
+	<div class="alert alert-danger alert-dismissable">
+		<?php echo e(Session::get('failure')); ?>
+		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+	</div>
+<?php elseif (Session::has('info')): ?>
+	<div class="alert alert-info alert-dismissable">
+		<?php echo e(Session::get('info')); ?>
+		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+	</div>
+<?php endif; ?>
